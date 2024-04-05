@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-control-plane
+  namespace: exp
+  labels:
+  	k8s-app: ftmesh
+spec:
+  selector:
+  	matchLabels: control-plane
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        k8s-app: ftmesh
+    spec:
+      containers:
+      - name: controller
+        image: go-control-plane:latest
+        ports:
+        - containerPort: 10901
+          name: control
+        resources:
+          requests:
+            vcpu: "1"
+            memory: 2Gi
+          limits:
+            vcpu: "1"
+            memory: 4Gi           		
