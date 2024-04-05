@@ -6,8 +6,8 @@ metadata:
 data: 
   conf: |
     node:
-    id: proxy-110
-    cluster: test
+      id: proxy-110
+      cluster: test
 
     admin:
       profile_path: /tmp/envoy.prof
