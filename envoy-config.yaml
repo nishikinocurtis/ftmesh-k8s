@@ -4,7 +4,7 @@ metadata:
   name: envoy-config
   namespace: exp
 data: 
-  conf: |
+  conf.yaml: |
     node:
       id: proxy-110
       cluster: test
