@@ -4,10 +4,10 @@ metadata:
   name: go-control-plane
   namespace: exp
   labels:
-  	k8s-app: ftmesh
+    k8s-app: ftmesh
 spec:
   selector:
-  	matchLabels: control-plane
+    matchLabels: control-plane
   replicas: 1
   template:
     metadata:
