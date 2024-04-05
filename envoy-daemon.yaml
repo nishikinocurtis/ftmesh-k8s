@@ -33,7 +33,7 @@ spec:
             cpu: "8"
         args:
         - "-c"
-        - "/etc/envoy/configs/conf"
+        - "/etc/envoy/configs/conf.yaml"
         ports:
         - containerPort: 10728
           name: envoyudp
