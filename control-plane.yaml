@@ -28,7 +28,7 @@ spec:
                 operator: Exists
       containers:
       - name: controller
-        image: go-control-plane:latest
+        image: nishikinocurtis/go-control-plane:latest
         ports:
         - containerPort: 10901
           name: control
